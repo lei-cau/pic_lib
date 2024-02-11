@@ -1,5 +1,5 @@
 {
-    "<img src=\"https://cdn.catchyun.com/comments/icon/Cat/ablobcatheart.webp\" style='width: 30px;top: 4px;position: relative;' title='Cat'": {
+    "BlobCat": {
         "type": "image",
         "container": [
             {
