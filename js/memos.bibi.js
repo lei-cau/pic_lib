@@ -297,7 +297,7 @@ var memosData = {
       }
     }else{
       try {
-        memoOurList = await getMemoListData("/js/memos.json"); // 获取自定义列表
+        memoOurList = await getMemoListData("https://cdn.jsdelivr.net/gh/lei-cau/pic_lib/js/memos.json"); // 获取自定义列表
       } catch (error) {
         memoOurList = memoDefaultList
       }
