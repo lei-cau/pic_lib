@@ -171,7 +171,7 @@ var memosEditorCont = `
 memosDom.insertAdjacentHTML('afterbegin',memosEditorCont);
 
 var themeTogglebtn = document.querySelector(".memos-theme-toggle");
-var myFeedsBtn = document.querySelector(".my-blog-feeds");
+//var myFeedsBtn = document.querySelector(".my-blog-feeds");
 var memosEditorInner = document.querySelector(".memos-editor-inner"); 
 var memosEditorOption = document.querySelector(".memos-editor-option");
 var memosRadomCont = document.querySelector(".memos-random");
@@ -192,8 +192,8 @@ var switchUserBtn = document.querySelector(".switchUser-btn");
 var loadEditorBtn = document.querySelector(".call-memos-editor");
 var searchBtn = document.querySelector(".search-memos-btn");
 var searchInput = document.querySelector(".search-memos-input");
-var userlistBtn = document.querySelector(".userlist-memos");
-var randomUserBtn = document.querySelector(".randomuser-memos");
+//var userlistBtn = document.querySelector(".userlist-memos");
+//var randomUserBtn = document.querySelector(".randomuser-memos");
 var submitApiBtn = document.querySelector(".submit-openapi-btn");
 var submitMemoBtn = document.querySelector(".submit-memos-btn");
 var memosVisibilitySelect = document.querySelector(".select-memos-value");
@@ -218,7 +218,7 @@ var biaoqingBtn = document.querySelector(".biao-qing-btn");
 var usernowDom = document.querySelector(".user-now");
 var usernowBtnDom = document.querySelectorAll(".user-now .button");
 var goHomeBtn = document.querySelector('.gohome-memos')
-var goBbsBtn = document.querySelector('.gobbs-memos')
+//var goBbsBtn = document.querySelector('.gobbs-memos')
 
 var memoDom = document.querySelector(memosData.listDom);
 var skeleton = `<div class="el-loading"><div class="el-skeleton mb-3"></div><div class="el-skeleton mb-3"></div><div class="el-skeleton width-50 mb-3"></div><div class="el-skeleton mb-3"></div><div class="el-skeleton mb-3"></div><div class="el-skeleton width-50 mb-3"></div></div>`;
