@@ -12,27 +12,12 @@ var memosDom = document.querySelector(memosData.dom);
 let memoList
 var memoDefaultList = [
   {
-    "creatorName": "林木木",
-    "website": "https://immmmm.com",
-    "link": "https://me.edui.fun",
-    "creatorId": "101",
-    "avatar": "https://gravatar.memobbs.app/avatar/ba83fa02fc4b2ba621514941307e21be?s=80",
-    "twikoo": "https://metk.edui.fun"
-  },{
-    "creatorName": "归臧",
-    "website": "https://nuoea.com/",
-    "link": "https://memos.nuoea.com",
-    "creatorId": "101",
-    "avatar": "https://gravatar.memobbs.app/avatar/020d365ea2596ef6d516143bb0552704?s=80",
-    "twikoo": "https://twikoo.nuoea.com"
-  },{
-    "creatorName": "koobai",
-    "website": "https://koobai.com",
-    "link": "https://memos.koobai.com",
-    "creatorId": "1",
-    "avatar": "https://gravatar.memobbs.app/avatar/3b3d336a7d389b7ae8531cbe177ae9b7?s=80",
-    "artalk": "https://c.koobai.com",
-    "artSite": "空白唠叨"
+    "creatorName" : "Le1",
+    "website" : "https://le1.me/",
+    "link" : "https://memos.le1.me",
+    "creatorId" : "1",
+    "avatar" : "https://0.gravatar.com/avatar/39a57ba16ad0f2cae6cda524b80fd86438c64c1032ea176680cdb6deee076e4b?s=80&d=mm",
+    "twikoo" : "https://twikoo.le1.me"
   }
 ];
 
@@ -49,18 +34,6 @@ var userNow = `
     <span class="memos-theme-toggle button d-md-flex p-2 mr-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="1.15rem" height="1.15rem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8a2.83 2.83 0 0 0 4 4a4 4 0 1 1-4-4m0-6v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4l1.4 1.4M2 12h2m16 0h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></svg>
     </span>
-    <span class="my-blog-feeds button d-md-flex p-2 mr-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1.15rem" height="1.15rem" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0m-3 6v6m6-3v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></g></svg>
-    </span>
-    <span class="userlist-memos button d-md-flex p-2 mr-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1.15rem" height="1.15rem" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87m-3-12a4 4 0 0 1 0 7.75"/></g></svg>
-    </span>
-    <span class="randomuser-memos button d-md-flex p-2 mr-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1.15rem" height="1.15rem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0m16 4v-2.38c0-2.12 1.03-3.12 1-5.62c-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0m-4-3h4M4 13h4"/></svg>
-    </span>
-    <span class="gobbs-memos button d-md-flex p-2 mr-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1.15rem" height="1.15rem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.8 20v-4.1l1.9.2a2.3 2.3 0 0 0 2.164-2.1V8.3A5.37 5.37 0 0 0 2 8.25c0 2.8.656 3.054 1 4.55a5.77 5.77 0 0 1 .029 2.758L2 20m17.8-2.2a7.5 7.5 0 0 0 .003-10.603M17 15a3.5 3.5 0 0 0-.025-4.975"/></svg>
-    </span> 
     <span class="gohome-memos button d-md-flex p-2 mr-3">
       <svg xmlns="http://www.w3.org/2000/svg" width="1.15rem" height="1.15rem" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m3 9l9-7l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></g></svg>
     </span>
@@ -279,8 +252,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 themeTogglebtn.addEventListener('click', function() {
   if(!document.body.classList.contains("dark")){
-    document.body.classList.add("dark-theme","dark");
-    window.localStorage && window.localStorage.setItem("theme","dark");
+    document.body.classList.add("light-theme","light");
+    window.localStorage && window.localStorage.setItem("theme","light");
   }else{
     document.body.classList.remove("dark-theme","dark");
     window.localStorage && window.localStorage.setItem("theme","light");
@@ -297,7 +270,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }else{
     try {
-      memoOurList = await getMemoListData("https://memobbs.app/memos.json"); // 获取自定义列表
+      memoOurList = await getMemoListData("https://cdn.jsdelivr.net/gh/lei-cau/pic_lib/js/memos.json"); // 获取自定义列表
     } catch (error) {
       memoOurList = memoDefaultList
     }
@@ -815,136 +788,138 @@ myFeedsBtn.addEventListener('click', function(event) {
   })
 });
 
-function myFeedsXML(e){
-  loadBtn.classList.add('d-none');
-  let myfeedsDom = document.querySelector(".myfeeds")
-  document.querySelectorAll('.myfeeds-xml').forEach((item) => {
-    item.classList.add('noclick');
-    item.classList.remove('current');
-  })
-  e.classList.add("current")
-  let type = e.getAttribute("data-type")
-  myfeedsDom.innerHTML = ""
-  let myFeedArticle = '',entries;
-  myfeedsDom.innerHTML = skeleton;
-  if(type=="bfind"){
-    fetch('https://cors.memobbs.app/https://bf.zzxworld.com/feed.xml').then(response => response.text()).then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
-    .then(data => {
-      entries = Array.from(data.querySelectorAll('entry')).map(entry => {
-        return {
-          title: entry.querySelector('title').textContent,
-          link: entry.querySelector('link').getAttribute('href'),
-          published: entry.querySelector('published').textContent,
-          creator: entry.querySelector('author name').textContent
-        };
-      });
-      var myFeedArticle = '';
-      for (var i = 0;i<20;i++){
-        let item = entries[i];
-        myFeedArticle +=`
-        <div class="card-item flex-fill p-3">
-          <div class="d-flex flex-fill">
-            <div class="item-avatar mr-2 face" style="background-image:url('https://favicon.memobbs.app?url=${item.link}')"></div>
-            <div class="item-sub d-flex flex-column p-1">
-              <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
-              <span class="myfeeds-floor">${i+1}</span>
-              <div class="item-mate mt-2 text-xs">${item.published}</div>
-            </div>
-          </div>
-        </div>
-        `;
-        myfeedsDom.innerHTML = myFeedArticle
-      }
-      document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
-      window.Lately && Lately.init({target: '.item-mate'});
-    });
-  }
-  if(type=="jixin"){
-    fetch("https://cors.memobbs.app/https://firewood.news/rss.xml").then(response => response.text()).then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
-    .then(data => {
-      entries = Array.from(data.querySelectorAll('item')).map(entry => {
-        return {
-          title: entry.querySelector('title').textContent,
-          link: entry.querySelector('link').textContent,
-          published: entry.querySelector('pubDate').textContent,
-          creator: entry.querySelector('author').textContent.charAt(0)
-        };
-      });
-      var myFeedArticle = '';
-      for (var i = 0;i<15;i++){
-        let item = entries[i];
-        myFeedArticle +=`
-        <div class="card-item flex-fill p-3">
-          <div class="d-flex flex-fill">
-            <div class="item-avatar mr-2 face" style="background-image:url('https://favicon.memobbs.app?url=${item.link}')"></div>
-            <div class="item-sub d-flex flex-column p-1">
-              <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
-              <span class="myfeeds-floor">${i+1}</span>
-              <div class="item-mate mt-2 text-xs">${item.published}</div>
-            </div>
-          </div>
-        </div>
-        `;
-        myfeedsDom.innerHTML = myFeedArticle
-      }
-      document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
-      window.Lately && Lately.init({target: '.item-mate'});
-    });
-  }
-  if(type=="boyou"){
-    fetch("https://www.boyouquan.com/feed.xml").then(response => response.text()).then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
-    .then(data => {
-      entries = Array.from(data.querySelectorAll('item')).map(entry => {
-        return {
-          title: entry.querySelector('title').textContent,
-          link: decodeURIComponent(entry.querySelector('link').textContent.replace('https://www.boyouquan.com/go?from=feed&link=',"")),
-          published: entry.getElementsByTagName('dc:date')[0].textContent,
-          creator: entry.getElementsByTagName('dc:creator')[0].textContent
-        };
-      });
-      for (var i = 0;i<20;i++){
-        let item = entries[i];
-        myFeedArticle +=`
-        <div class="card-item flex-fill p-3">
-          <div class="d-flex flex-fill">
-            <div class="item-avatar mr-2 face" style="background-image:url('https://favicon.memobbs.app?url=${item.link}')"></div>
-            <div class="item-sub d-flex flex-column p-1">
-              <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
-              <span class="myfeeds-floor">${i+1}</span>
-              <div class="item-mate mt-2 text-xs">${item.published}</div>
-            </div>
-          </div>
-        </div>
-        `;
-        myfeedsDom.innerHTML = myFeedArticle
-      }
-      document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
-      window.Lately && Lately.init({target: '.item-mate'});
-    });
-  }
-  if(type=="shinian"){
-    fetch("https://www.foreverblog.cn/api/v1/blog/feeds?page=1").then(res => res.json()).then(resdata =>{
-      for (var i = 0;i<20;i++){
-        let item = resdata.data.data[i];
-        myFeedArticle +=`
-        <div class="card-item flex-fill p-3">
-          <div class="d-flex flex-fill">
-            <div class="item-avatar mr-2" style="background-image:url(https://gravatar.loli.net/avatar/${item.email})"></div>
-            <div class="item-sub d-flex flex-column p-1">
-              <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
-              <span class="myfeeds-floor">${i+1}</span>
-              <div class="item-mate mt-2 text-xs">${item.created_at}</div>
-            </div>
-          </div>
-        </div>
-        `;
-        myfeedsDom.innerHTML = myFeedArticle
-      }
-      document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
-      window.Lately && Lately.init({target: '.item-mate'});
-    });
-  }
-}
+//cicada 1
+// function myFeedsXML(e){
+//   loadBtn.classList.add('d-none');
+//   let myfeedsDom = document.querySelector(".myfeeds")
+//   document.querySelectorAll('.myfeeds-xml').forEach((item) => {
+//     item.classList.add('noclick');
+//     item.classList.remove('current');
+//   })
+//   e.classList.add("current")
+//   let type = e.getAttribute("data-type")
+//   myfeedsDom.innerHTML = ""
+//   let myFeedArticle = '',entries;
+//   myfeedsDom.innerHTML = skeleton;
+//   if(type=="bfind"){
+//     fetch('https://cors.memobbs.app/https://bf.zzxworld.com/feed.xml').then(response => response.text()).then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+//     .then(data => {
+//       entries = Array.from(data.querySelectorAll('entry')).map(entry => {
+//         return {
+//           title: entry.querySelector('title').textContent,
+//           link: entry.querySelector('link').getAttribute('href'),
+//           published: entry.querySelector('published').textContent,
+//           creator: entry.querySelector('author name').textContent
+//         };
+//       });
+//       var myFeedArticle = '';
+//       for (var i = 0;i<20;i++){
+//         let item = entries[i];
+//         myFeedArticle +=`
+//         <div class="card-item flex-fill p-3">
+//           <div class="d-flex flex-fill">
+//             <div class="item-avatar mr-2 face" style="background-image:url('https://favicon.memobbs.app?url=${item.link}')"></div>
+//             <div class="item-sub d-flex flex-column p-1">
+//               <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
+//               <span class="myfeeds-floor">${i+1}</span>
+//               <div class="item-mate mt-2 text-xs">${item.published}</div>
+//             </div>
+//           </div>
+//         </div>
+//         `;
+//         myfeedsDom.innerHTML = myFeedArticle
+//       }
+//       document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
+//       window.Lately && Lately.init({target: '.item-mate'});
+//     });
+//   }
+//   if(type=="jixin"){
+//     fetch("https://cors.memobbs.app/https://firewood.news/rss.xml").then(response => response.text()).then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+//     .then(data => {
+//       entries = Array.from(data.querySelectorAll('item')).map(entry => {
+//         return {
+//           title: entry.querySelector('title').textContent,
+//           link: entry.querySelector('link').textContent,
+//           published: entry.querySelector('pubDate').textContent,
+//           creator: entry.querySelector('author').textContent.charAt(0)
+//         };
+//       });
+//       var myFeedArticle = '';
+//       for (var i = 0;i<15;i++){
+//         let item = entries[i];
+//         myFeedArticle +=`
+//         <div class="card-item flex-fill p-3">
+//           <div class="d-flex flex-fill">
+//             <div class="item-avatar mr-2 face" style="background-image:url('https://favicon.memobbs.app?url=${item.link}')"></div>
+//             <div class="item-sub d-flex flex-column p-1">
+//               <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
+//               <span class="myfeeds-floor">${i+1}</span>
+//               <div class="item-mate mt-2 text-xs">${item.published}</div>
+//             </div>
+//           </div>
+//         </div>
+//         `;
+//         myfeedsDom.innerHTML = myFeedArticle
+//       }
+//       document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
+//       window.Lately && Lately.init({target: '.item-mate'});
+//     });
+//   }
+//   if(type=="boyou"){
+//     fetch("https://www.boyouquan.com/feed.xml").then(response => response.text()).then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+//     .then(data => {
+//       entries = Array.from(data.querySelectorAll('item')).map(entry => {
+//         return {
+//           title: entry.querySelector('title').textContent,
+//           link: decodeURIComponent(entry.querySelector('link').textContent.replace('https://www.boyouquan.com/go?from=feed&link=',"")),
+//           published: entry.getElementsByTagName('dc:date')[0].textContent,
+//           creator: entry.getElementsByTagName('dc:creator')[0].textContent
+//         };
+//       });
+//       for (var i = 0;i<20;i++){
+//         let item = entries[i];
+//         myFeedArticle +=`
+//         <div class="card-item flex-fill p-3">
+//           <div class="d-flex flex-fill">
+//             <div class="item-avatar mr-2 face" style="background-image:url('https://favicon.memobbs.app?url=${item.link}')"></div>
+//             <div class="item-sub d-flex flex-column p-1">
+//               <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
+//               <span class="myfeeds-floor">${i+1}</span>
+//               <div class="item-mate mt-2 text-xs">${item.published}</div>
+//             </div>
+//           </div>
+//         </div>
+//         `;
+//         myfeedsDom.innerHTML = myFeedArticle
+//       }
+//       document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
+//       window.Lately && Lately.init({target: '.item-mate'});
+//     });
+//   }
+//   if(type=="shinian"){
+//     fetch("https://www.foreverblog.cn/api/v1/blog/feeds?page=1").then(res => res.json()).then(resdata =>{
+//       for (var i = 0;i<20;i++){
+//         let item = resdata.data.data[i];
+//         myFeedArticle +=`
+//         <div class="card-item flex-fill p-3">
+//           <div class="d-flex flex-fill">
+//             <div class="item-avatar mr-2" style="background-image:url(https://gravatar.loli.net/avatar/${item.email})"></div>
+//             <div class="item-sub d-flex flex-column p-1">
+//               <div class="item-creator"><a href="${item.link}" target="_blank" rel="noopener nofollow" >${item.title}</a></div>
+//               <span class="myfeeds-floor">${i+1}</span>
+//               <div class="item-mate mt-2 text-xs">${item.created_at}</div>
+//             </div>
+//           </div>
+//         </div>
+//         `;
+//         myfeedsDom.innerHTML = myFeedArticle
+//       }
+//       document.querySelectorAll('.myfeeds-xml').forEach((item) => {item.classList.remove('noclick');})
+//       window.Lately && Lately.init({target: '.item-mate'});
+//     });
+//   }
+// }
+//cicada 0
 
 //标签筛选且输入框为空，自动插入标签
 memosTextarea.addEventListener('focus', function(event) {
@@ -1010,21 +985,23 @@ function searchNow(serchText){
   }
 }
 
-//显示订阅列表
-userlistBtn.addEventListener("click", function () {
-  let userlistDom = document.querySelector(".userlist");
-  if(userlistDom){
-    userlistDom.remove();
-  }else{
-    let userlistDom = `<div class="userlist card-item d-flex flex-wrap mb-3 animate__animated animate__fadeIn">`;
-    for (var i = 0; i < memoList.length; i++) {
-      let nowMemo = memoList[i]
-      userlistDom += `<div onclick="getUserMemos('${nowMemo.link}', '${nowMemo.creatorId}','${nowMemo.creatorName.replace(/'/g, "’")}','${nowMemo.avatar}')" class="item-avatar" style="background-image:url(${nowMemo.avatar})"></div>`
-    }
-    userlistDom += `</div>`;
-    memosDom.insertAdjacentHTML('beforebegin', userlistDom);
-  }
-});
+//cicada 1
+// //显示订阅列表
+// userlistBtn.addEventListener("click", function () {
+//   let userlistDom = document.querySelector(".userlist");
+//   if(userlistDom){
+//     userlistDom.remove();
+//   }else{
+//     let userlistDom = `<div class="userlist card-item d-flex flex-wrap mb-3 animate__animated animate__fadeIn">`;
+//     for (var i = 0; i < memoList.length; i++) {
+//       let nowMemo = memoList[i]
+//       userlistDom += `<div onclick="getUserMemos('${nowMemo.link}', '${nowMemo.creatorId}','${nowMemo.creatorName.replace(/'/g, "’")}','${nowMemo.avatar}')" class="item-avatar" style="background-image:url(${nowMemo.avatar})"></div>`
+//     }
+//     userlistDom += `</div>`;
+//     memosDom.insertAdjacentHTML('beforebegin', userlistDom);
+//   }
+// });
+//cicada 0
 
 //返回个人主页
 function goHome(){
@@ -1037,20 +1014,22 @@ function goHome(){
   cocoMessage.success("Hi， "+nowName);
 };
 
+//cicada 1
 //切换为广场模式
-function goBbs(){
-  goBbsBtn.classList.add("noclick")
-  usernowBtnDom.forEach((item) => {item.classList.remove('current');})
-  goBbsBtn.classList.add("current")
-  goHomeBtn.classList.remove("current")
-  getMemos();
-  let usernowName = document.querySelector(".user-now-name");
-  let usernowAvatar = document.querySelector(".user-now-avatar");
-  usernowName.innerHTML = "";
-  usernowAvatar.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-  //goBbsBtn.classList.remove("noclick")
-  cocoMessage.success("有啥新鲜事儿？");
-};
+// function goBbs(){
+//   goBbsBtn.classList.add("noclick")
+//   usernowBtnDom.forEach((item) => {item.classList.remove('current');})
+//   goBbsBtn.classList.add("current")
+//   goHomeBtn.classList.remove("current")
+//   getMemos();
+//   let usernowName = document.querySelector(".user-now-name");
+//   let usernowAvatar = document.querySelector(".user-now-avatar");
+//   usernowName.innerHTML = "";
+//   usernowAvatar.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+//   //goBbsBtn.classList.remove("noclick")
+//   cocoMessage.success("有啥新鲜事儿？");
+// };
+//cicada 0
 
 goHomeBtn.addEventListener("click", function () {
   window.localStorage && window.localStorage.setItem("memos-mode",  "MEMOSHOME");
@@ -1058,32 +1037,34 @@ goHomeBtn.addEventListener("click", function () {
   if(tagnowHas) tagnowHas.remove();
   goHome();
 });
-goBbsBtn.addEventListener("click", function () {
-  window.localStorage && window.localStorage.setItem("memos-mode",  "MEMOSBBS");
-  let tagnowHas = document.querySelector(".memos-tagnow")
-  if(tagnowHas) tagnowHas.remove();
-  goBbs()
-});
-randomUserBtn.addEventListener("click", function () {
-  window.localStorage && window.localStorage.setItem("memos-mode",  "RANDUSER");
-  let tagnowHas = document.querySelector(".memos-tagnow")
-  if(tagnowHas) tagnowHas.remove();
-  goRandUser()
-});
+//cicada 1
+// goBbsBtn.addEventListener("click", function () {
+//   window.localStorage && window.localStorage.setItem("memos-mode",  "MEMOSBBS");
+//   let tagnowHas = document.querySelector(".memos-tagnow")
+//   if(tagnowHas) tagnowHas.remove();
+//   goBbs()
+// });
+// randomUserBtn.addEventListener("click", function () {
+//   window.localStorage && window.localStorage.setItem("memos-mode",  "RANDUSER");
+//   let tagnowHas = document.querySelector(".memos-tagnow")
+//   if(tagnowHas) tagnowHas.remove();
+//   goRandUser()
+// });
 //随机个人
-function goRandUser(){
-  randomUser = 1;
-  usernowBtnDom.forEach((item) => {item.classList.remove('current');})
-  randomUserBtn.classList.add("current")
-  let usernowName = document.querySelector(".user-now-name");
-  let usernowAvatar = document.querySelector(".user-now-avatar");
-  usernowName.innerHTML = ""
-  usernowAvatar.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-  let randomIndex = Math.floor(Math.random() * (memoList.length +1));
-  let userNowData = memoList[randomIndex]
-  getUserMemos(userNowData.link,userNowData.creatorId,userNowData.creatorName,userNowData.avatar,"","")
-  cocoMessage.success(userNowData.creatorName+" 上线～");
-}
+// function goRandUser(){
+//   randomUser = 1;
+//   usernowBtnDom.forEach((item) => {item.classList.remove('current');})
+//   randomUserBtn.classList.add("current")
+//   let usernowName = document.querySelector(".user-now-name");
+//   let usernowAvatar = document.querySelector(".user-now-avatar");
+//   usernowName.innerHTML = ""
+//   usernowAvatar.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+//   let randomIndex = Math.floor(Math.random() * (memoList.length +1));
+//   let userNowData = memoList[randomIndex]
+//   getUserMemos(userNowData.link,userNowData.creatorId,userNowData.creatorName,userNowData.avatar,"","")
+//   cocoMessage.success(userNowData.creatorName+" 上线～");
+// }
+//cicada 0
 
 //重载当前 user
 function reloadUser(mode){
@@ -1106,143 +1087,146 @@ function reloadUser(mode){
   }
 }
 
+//cicada 1
 // 获取指定用户列表
-async function getUserMemos(link,id,name,avatar,tag,search,mode,random) {
-    memoDom.innerHTML = skeleton;
-    loadBtn.classList.add('d-none');
-    randomUserBtn.classList.add("noclick")
-    memoData = [],memoCreatorMap = {}, page = 1,nums = 0,dataNum = 0,memosContType = 1;
-    memosPath = window.localStorage && window.localStorage.getItem("memos-access-path");
-    let usernowName = document.querySelector(".user-now-name");
-    let usernowAvatar = document.querySelector(".user-now-avatar");
-    usernowName.innerHTML = name;
-    usernowAvatar.src = avatar;
-    if (link == memosPath) {
-      memosAccess = 1;
-    };
-    let userMemoUrl;
-    if(tag && (random == null || random == "" )){
-      userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&tag=${tag}&rowStatus=NORMAL&limit=50`;
-    }else if(search){
-      userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&content=${search}&rowStatus=NORMAL&limit=${limit}`;
-    }else if(mode == "NOPUBLIC"){
-      userMemoUrl = `${link}/api/v1/memo`;
-    }else if(random){
-      if(tag){
-        userMemoUrl = `${link}/api/v1/memo?tag=${tag}&limit=1&offset=${random}`;
-      }else{
-        userMemoUrl = `${link}/api/v1/memo?&limit=1&offset=${random}`;
-      }
-    }else{
-      userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&rowStatus=NORMAL&limit=50`;
-    }
+// async function getUserMemos(link,id,name,avatar,tag,search,mode,random) {
+//     memoDom.innerHTML = skeleton;
+//     loadBtn.classList.add('d-none');
+//     randomUserBtn.classList.add("noclick")
+//     memoData = [],memoCreatorMap = {}, page = 1,nums = 0,dataNum = 0,memosContType = 1;
+//     memosPath = window.localStorage && window.localStorage.getItem("memos-access-path");
+//     let usernowName = document.querySelector(".user-now-name");
+//     let usernowAvatar = document.querySelector(".user-now-avatar");
+//     usernowName.innerHTML = name;
+//     usernowAvatar.src = avatar;
+//     if (link == memosPath) {
+//       memosAccess = 1;
+//     };
+//     let userMemoUrl;
+//     if(tag && (random == null || random == "" )){
+//       userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&tag=${tag}&rowStatus=NORMAL&limit=50`;
+//     }else if(search){
+//       userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&content=${search}&rowStatus=NORMAL&limit=${limit}`;
+//     }else if(mode == "NOPUBLIC"){
+//       userMemoUrl = `${link}/api/v1/memo`;
+//     }else if(random){
+//       if(tag){
+//         userMemoUrl = `${link}/api/v1/memo?tag=${tag}&limit=1&offset=${random}`;
+//       }else{
+//         userMemoUrl = `${link}/api/v1/memo?&limit=1&offset=${random}`;
+//       }
+//     }else{
+//       userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&rowStatus=NORMAL&limit=50`;
+//     }
 
-    if (link == memosPath) {
-      try {
-        let response = await fetch(userMemoUrl,{
-            headers: {
-              'Authorization': `Bearer ${memosOpenId}`,
-              'Content-Type': 'application/json',
-              'Cache-Control': 'no-cache',
-            },
-            cache: 'no-store',
-        });
-        if (response.ok) {
-          let data = await response.json();
-          let oneDayTag = window.localStorage && window.localStorage.getItem("memos-oneday-tag");
-          let oneDayTagCount = window.localStorage && window.localStorage.getItem("memos-oneday-count");
-          if( oneDayTag !== null && oneDayTagCount !== null && !search ){
-            let randomOneNum = Math.floor(Math.random() * oneDayTagCount)
-            let oneDayUrl = `${link}/api/v1/memo?tag=${oneDayTag}&limit=1&offset=${randomOneNum}`
-            //console.log(oneDayUrl)
-            try {
-              let responseOne = await fetch(oneDayUrl,{
-                headers: {
-                  'Authorization': `Bearer ${memosOpenId}`,
-                  'Content-Type': 'application/json',
-                  'Cache-Control': 'no-cache',
-                },
-                cache: 'no-store',
-              });
-              if (!responseOne.ok) {
-                throw new Error(`Request failed oneDay`);
-              }
-              dataone = await responseOne.json();
-              data.splice(0, 0, ...dataone);
-            } catch (error) {
-              console.error(error);
-            }
-          }
-          data.forEach(item => {
-            item.avatar = memosMeAvatarUrl
-            item.link = memosPath
-            item.twikoo = memosMeTwikoo
-            item.artalk = memosMeArtalk
-            item.artSite = `${memosMeArtalkSite}`
-          });
-          if (mode == "NOPUBLIC") {
-            memosCount = data.length;
-            window.localStorage && window.localStorage.setItem("memos-response-count",  memosCount);
-            data = data.filter((item) => item.visibility !== "PUBLIC");
-          }
-          memoData = data.flatMap(result => result);
-          memoList.forEach(item => {
-            memoCreatorMap[item.creatorName] = item;
-          });
-          memoData = memoData.map(item => {
-            let data = memoCreatorMap[item.creatorName];
-            return {...item, ...data};
-          });
-          if (mode !== "NOPUBLIC") {
-            memoData = await this.getMemoCount(memoData);
-          }
-          memoDom.innerHTML = "";
-          this.updateData(memoData);
-          if(!random && memoData.length >= 8 ){
-            setTimeout(function() {
-              loadBtn.classList.remove('d-none');
-            }, 1000);
-          }
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    }else{
-        try {
-          let response = await fetch(userMemoUrl);
-          if (!response.ok) {
-            throw new Error(response.statusText);
-          }
-          let data = await response.json();
-          memoData = data.flatMap(result => result);
-          memoList.forEach(item => {
-            memoCreatorMap[item.creatorName] = item;
-          });
-          memoData = memoData.map(item => {
-            let data = memoCreatorMap[item.creatorName];
-            return {...item, ...data};
-          });
-          memoData = await this.getMemoCount(memoData);
-          memoDom.innerHTML = "";
-          this.updateData(memoData);
-          if(memoData.length >= 8 ){
-            setTimeout(function() {
-              loadBtn.classList.remove('d-none');
-            }, 1000);
-          }
-        } catch (error) {
-          console.error(error);
-        }
-    }
-    setTimeout(function() {
-      goHomeBtn.classList.remove("noclick")
-      randomUserBtn.classList.remove("noclick")
-    }, 800);
-    window.scrollTo({
-      top: usernowDom.offsetTop - 30,
-      behavior: "smooth"
-    });
-}
+//     if (link == memosPath) {
+//       try {
+//         let response = await fetch(userMemoUrl,{
+//             headers: {
+//               'Authorization': `Bearer ${memosOpenId}`,
+//               'Content-Type': 'application/json',
+//               'Cache-Control': 'no-cache',
+//             },
+//             cache: 'no-store',
+//         });
+//         if (response.ok) {
+//           let data = await response.json();
+//           let oneDayTag = window.localStorage && window.localStorage.getItem("memos-oneday-tag");
+//           let oneDayTagCount = window.localStorage && window.localStorage.getItem("memos-oneday-count");
+//           if( oneDayTag !== null && oneDayTagCount !== null && !search ){
+//             let randomOneNum = Math.floor(Math.random() * oneDayTagCount)
+//             let oneDayUrl = `${link}/api/v1/memo?tag=${oneDayTag}&limit=1&offset=${randomOneNum}`
+//             //console.log(oneDayUrl)
+//             try {
+//               let responseOne = await fetch(oneDayUrl,{
+//                 headers: {
+//                   'Authorization': `Bearer ${memosOpenId}`,
+//                   'Content-Type': 'application/json',
+//                   'Cache-Control': 'no-cache',
+//                 },
+//                 cache: 'no-store',
+//               });
+//               if (!responseOne.ok) {
+//                 throw new Error(`Request failed oneDay`);
+//               }
+//               dataone = await responseOne.json();
+//               data.splice(0, 0, ...dataone);
+//             } catch (error) {
+//               console.error(error);
+//             }
+//           }
+//           data.forEach(item => {
+//             item.avatar = memosMeAvatarUrl
+//             item.link = memosPath
+//             item.twikoo = memosMeTwikoo
+//             item.artalk = memosMeArtalk
+//             item.artSite = `${memosMeArtalkSite}`
+//           });
+//           if (mode == "NOPUBLIC") {
+//             memosCount = data.length;
+//             window.localStorage && window.localStorage.setItem("memos-response-count",  memosCount);
+//             data = data.filter((item) => item.visibility !== "PUBLIC");
+//           }
+//           memoData = data.flatMap(result => result);
+//           memoList.forEach(item => {
+//             memoCreatorMap[item.creatorName] = item;
+//           });
+//           memoData = memoData.map(item => {
+//             let data = memoCreatorMap[item.creatorName];
+//             return {...item, ...data};
+//           });
+//           if (mode !== "NOPUBLIC") {
+//             memoData = await this.getMemoCount(memoData);
+//           }
+//           memoDom.innerHTML = "";
+//           this.updateData(memoData);
+//           if(!random && memoData.length >= 8 ){
+//             setTimeout(function() {
+//               loadBtn.classList.remove('d-none');
+//             }, 1000);
+//           }
+//         }
+//       } catch (error) {
+//         console.error(error);
+//       }
+//     }else{
+//         try {
+//           let response = await fetch(userMemoUrl);
+//           if (!response.ok) {
+//             throw new Error(response.statusText);
+//           }
+//           let data = await response.json();
+//           memoData = data.flatMap(result => result);
+//           memoList.forEach(item => {
+//             memoCreatorMap[item.creatorName] = item;
+//           });
+//           memoData = memoData.map(item => {
+//             let data = memoCreatorMap[item.creatorName];
+//             return {...item, ...data};
+//           });
+//           memoData = await this.getMemoCount(memoData);
+//           memoDom.innerHTML = "";
+//           this.updateData(memoData);
+//           if(memoData.length >= 8 ){
+//             setTimeout(function() {
+//               loadBtn.classList.remove('d-none');
+//             }, 1000);
+//           }
+//         } catch (error) {
+//           console.error(error);
+//         }
+//     }
+//     setTimeout(function() {
+//       goHomeBtn.classList.remove("noclick")
+//       randomUserBtn.classList.remove("noclick")
+//     }, 800);
+//     window.scrollTo({
+//       top: usernowDom.offsetTop - 30,
+//       behavior: "smooth"
+//     });
+// }
+//cicada 0
+
 // Fetch NeoDB
 async function fetchNeoDB(url,mode){
   let urlNow;
