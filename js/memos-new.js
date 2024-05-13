@@ -27,8 +27,9 @@ let urls = [
     host:"https://memos.le1.me/",
     creatorId:"1",
     twiEnv:"https://twikoo.le1.me/",
+    comment:'1',
     imgsrc:cdnGravatar+"39a57ba16ad0f2cae6cda524b80fd86438c64c1032ea176680cdb6deee076e4b",
-    endpoint:"https://api-emaction.le1.me",
+    endpoint:"https://api-emaction.immmmm.com",
     reacttargetid:"id-edui-memo-",
     availablearraystring:"👍,thumbs-up;🎉,party-popper;🚀,rocket;😄,smile-face;😎,cool;❤️,red-heart;"
   }
